@@ -1,0 +1,685 @@
+{
+  "date": "2026-10-06",
+  "live": [
+    {
+      "url": "https://kingmotors52.ru/",
+      "status": "200",
+      "error": null,
+      "title": "Автосервис КингМоторс в Нижнем Новгороде - ТО и ремонт легковых авто",
+      "h1": [
+        "Автосервис по ремонту иномарок в Нижнем Новгороде"
+      ],
+      "description": "Автосервис КингМоторс в Нижнем Новгороде - техобслуживание и ремонт легковых автомобилей. Сделать ремонт и пройти ТО авто по выгодным ценам. Звоните: 8 800 600 50 76!",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/o-servise",
+      "status": "200",
+      "error": null,
+      "title": "О сервисе",
+      "h1": [
+        "О сервисе"
+      ],
+      "description": "О сервисе",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/uslugi",
+      "status": "200",
+      "error": null,
+      "title": "Услуги",
+      "h1": [
+        "Услуги"
+      ],
+      "description": "Услуги",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/obsluzhivanie-avtomobiley",
+      "status": "200",
+      "error": null,
+      "title": "Обслуживание автомобилей",
+      "h1": [],
+      "description": "Обслуживание автомобилей",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/remont-avtomobiley",
+      "status": "200",
+      "error": null,
+      "title": "Ремонт автомобилей",
+      "h1": [],
+      "description": "Ремонт автомобилей",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/diagnostika-avtomobiley",
+      "status": "200",
+      "error": null,
+      "title": "Диагностика автомобилей",
+      "h1": [],
+      "description": "Диагностика автомобилей",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/podbor-zapchastey",
+      "status": "200",
+      "error": null,
+      "title": "Подбор запчастей",
+      "h1": [
+        "Подбор запчастей"
+      ],
+      "description": "Подбор запчастей - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/shinomontazh",
+      "status": "200",
+      "error": null,
+      "title": "Шиномонтаж",
+      "h1": [
+        "Шиномонтаж"
+      ],
+      "description": "Шиномонтаж - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/moyka",
+      "status": "200",
+      "error": null,
+      "title": "Химчистка автомобиля / мойка",
+      "h1": [
+        "Химчистка автомобиля / мойка"
+      ],
+      "description": "Химчистка автомобиля / мойка - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/korporativnym-klientam",
+      "status": "200",
+      "error": null,
+      "title": "Корпоративным клиентам",
+      "h1": [
+        "Корпоративным клиентам"
+      ],
+      "description": "Корпоративным клиентам",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/vakansii",
+      "status": "200",
+      "error": null,
+      "title": "Вакансии",
+      "h1": [
+        "Вакансии"
+      ],
+      "description": "Вакансии",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/kontaktyi",
+      "status": "200",
+      "error": null,
+      "title": "Контакты",
+      "h1": [
+        "Контакты"
+      ],
+      "description": "Контакты",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/soglasiem-na-obrabotku-personalnyh-dannyh",
+      "status": "200",
+      "error": null,
+      "title": "Согласием на обработку персональных данных",
+      "h1": [
+        "Согласием на обработку персональных данных"
+      ],
+      "description": "Согласием на обработку персональных данных",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/privacypolicy",
+      "status": "200",
+      "error": null,
+      "title": "Политика конфиденциальности",
+      "h1": [
+        "Политика конфиденциальности"
+      ],
+      "description": "Политика конфиденциальности",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/site-map",
+      "status": "200",
+      "error": null,
+      "title": "Карта сайта",
+      "h1": [
+        "Карта сайта"
+      ],
+      "description": "Карта сайта",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/tehnicheskoe-obsluzhivanie",
+      "status": "200",
+      "error": null,
+      "title": "Техническое обслуживание",
+      "h1": [
+        "Техническое обслуживание"
+      ],
+      "description": "Техническое обслуживание - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/zamena-masla-v-dvigatele",
+      "status": "200",
+      "error": null,
+      "title": "Замена масла в двигателе",
+      "h1": [
+        "Замена масла в двигателе"
+      ],
+      "description": "Замена масла в двигателе - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/zamena-masla-kpp",
+      "status": "200",
+      "error": null,
+      "title": "Замена масла КПП",
+      "h1": [
+        "Замена масла КПП"
+      ],
+      "description": "Замена масла КПП - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/zamena-remnya-grm-dvigatelya",
+      "status": "200",
+      "error": null,
+      "title": "Замена ремня ГРМ двигателя",
+      "h1": [
+        "Замена ремня ГРМ двигателя"
+      ],
+      "description": "Замена ремня ГРМ двигателя - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/zamena-tsepi-grm",
+      "status": "200",
+      "error": null,
+      "title": "Замена цепи ГРМ",
+      "h1": [
+        "Замена цепи ГРМ"
+      ],
+      "description": "Замена цепи ГРМ - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/zamena-svecheykatushki-zazhiganiya",
+      "status": "200",
+      "error": null,
+      "title": "Замена свечей/катушки зажигания",
+      "h1": [
+        "Замена свечей/катушки зажигания"
+      ],
+      "description": "Замена свечей/катушки зажигания - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/promyvka-dvigatelya-avtomobilya",
+      "status": "200",
+      "error": null,
+      "title": "Промывка двигателя автомобиля",
+      "h1": [
+        "Промывка двигателя автомобиля"
+      ],
+      "description": "Промывка двигателя автомобиля - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/razval-shozhdenie-avtomobilya",
+      "status": "200",
+      "error": null,
+      "title": "Развал-схождение автомобиля",
+      "h1": [
+        "Развал-схождение автомобиля"
+      ],
+      "description": "Развал-схождение автомобиля - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/zamena-filtrov-avtomobilya",
+      "status": "200",
+      "error": null,
+      "title": "Замена фильтров автомобиля",
+      "h1": [
+        "Замена фильтров автомобиля"
+      ],
+      "description": "Замена фильтров автомобиля - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/zamena-amortizatorov-perednih-zadnih",
+      "status": "200",
+      "error": null,
+      "title": "Замена амортизаторов (передних / задних)",
+      "h1": [
+        "Замена амортизаторов (передних / задних)"
+      ],
+      "description": "Замена амортизаторов (передних / задних) - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/zamena-podshipnikov-avtomobilya",
+      "status": "200",
+      "error": null,
+      "title": "Замена подшипников автомобиля",
+      "h1": [
+        "Замена подшипников автомобиля"
+      ],
+      "description": "Замена подшипников автомобиля - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/zamena-stoek-stabilizatora",
+      "status": "200",
+      "error": null,
+      "title": "Замена стоек стабилизатора",
+      "h1": [
+        "Замена стоек стабилизатора"
+      ],
+      "description": "Замена стоек стабилизатора - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/zamena-vtulok-stabilizatora",
+      "status": "200",
+      "error": null,
+      "title": "Замена втулок стабилизатора",
+      "h1": [
+        "Замена втулок стабилизатора"
+      ],
+      "description": "Замена втулок стабилизатора - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/zamena-pylnik-shrusa-avto",
+      "status": "200",
+      "error": null,
+      "title": "Замена пыльник ШРУСа авто",
+      "h1": [
+        "Замена пыльник ШРУСа авто"
+      ],
+      "description": "Замена пыльник ШРУСа авто - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/zamena-sharovyh-opor-avtomobilya",
+      "status": "200",
+      "error": null,
+      "title": "Замена шаровых опор автомобиля",
+      "h1": [
+        "Замена шаровых опор автомобиля"
+      ],
+      "description": "Замена шаровых опор автомобиля - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/zamena-rulevoy-reyki-avtomobilya",
+      "status": "200",
+      "error": null,
+      "title": "Замена рулевой рейки автомобиля",
+      "h1": [
+        "Замена рулевой рейки автомобиля"
+      ],
+      "description": "Замена рулевой рейки автомобиля - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/remont-tormoznoy-sistemy",
+      "status": "200",
+      "error": null,
+      "title": "Ремонт тормозной системы",
+      "h1": [
+        "Ремонт тормозной системы"
+      ],
+      "description": "Ремонт тормозной системы - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/remont-generatora-benzo-dizelnyh",
+      "status": "200",
+      "error": null,
+      "title": "Ремонт генератора (бензо / дизельных)",
+      "h1": [
+        "Ремонт генератора (бензо / дизельных)"
+      ],
+      "description": "Ремонт генератора (бензо / дизельных) - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/remont-kpp-mkpp-akpp",
+      "status": "200",
+      "error": null,
+      "title": "Ремонт КПП (МКПП / АКПП)",
+      "h1": [
+        "Ремонт КПП (МКПП / АКПП)"
+      ],
+      "description": "Ремонт КПП (МКПП / АКПП) - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/remont-stsepleniya",
+      "status": "200",
+      "error": null,
+      "title": "Ремонт сцепления",
+      "h1": [
+        "Ремонт сцепления"
+      ],
+      "description": "Ремонт сцепления - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/remont-dvigatelya",
+      "status": "200",
+      "error": null,
+      "title": "Ремонт двигателя",
+      "h1": [
+        "Ремонт двигателя"
+      ],
+      "description": "Ремонт двигателя - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/remont-korobki-dsg",
+      "status": "200",
+      "error": null,
+      "title": "Ремонт коробки DSG",
+      "h1": [
+        "Ремонт коробки DSG"
+      ],
+      "description": "Ремонт коробки DSG - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/diagnostika-remont-abs",
+      "status": "200",
+      "error": null,
+      "title": "Диагностика / ремонт АБС",
+      "h1": [
+        "Диагностика / ремонт АБС"
+      ],
+      "description": "Диагностика / ремонт АБС - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/diagnostika-remont-pechki-v-avto",
+      "status": "200",
+      "error": null,
+      "title": "Диагностика / ремонт печки в авто",
+      "h1": [
+        "Диагностика / ремонт печки в авто"
+      ],
+      "description": "Диагностика / ремонт печки в авто - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/diagnostika-remont-avto-konditsionerov",
+      "status": "200",
+      "error": null,
+      "title": "Диагностика / ремонт авто кондиционеров",
+      "h1": [
+        "Диагностика / ремонт авто кондиционеров"
+      ],
+      "description": "Диагностика / ремонт авто кондиционеров - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/diagnostika-remont-elektrooborudovaniya-avto",
+      "status": "200",
+      "error": null,
+      "title": "Диагностика / ремонт электрооборудования авто",
+      "h1": [
+        "Диагностика / ремонт электрооборудования авто"
+      ],
+      "description": "Диагностика / ремонт электрооборудования авто - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/diagnostika-remont-tormozov",
+      "status": "200",
+      "error": null,
+      "title": "Диагностика / ремонт тормозов",
+      "h1": [
+        "Диагностика / ремонт тормозов"
+      ],
+      "description": "Диагностика / ремонт тормозов - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/diagnostika-remont-dvigatelya",
+      "status": "200",
+      "error": null,
+      "title": "Диагностика / ремонт двигателя",
+      "h1": [
+        "Диагностика / ремонт двигателя"
+      ],
+      "description": "Диагностика / ремонт двигателя - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/diagnostika-remont-podveski",
+      "status": "200",
+      "error": null,
+      "title": "Диагностика / ремонт подвески",
+      "h1": [
+        "Диагностика / ремонт подвески"
+      ],
+      "description": "Диагностика / ремонт подвески - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/diagnostika-proverka-avtomobilya-pered-pokupkoy",
+      "status": "200",
+      "error": null,
+      "title": "Диагностика / проверка автомобиля перед покупкой",
+      "h1": [
+        "Диагностика / проверка автомобиля перед покупкой"
+      ],
+      "description": "Диагностика / проверка автомобиля перед покупкой - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/besplatnaya-diagnostika-avtomobilya",
+      "status": "200",
+      "error": null,
+      "title": "Бесплатная диагностика автомобиля",
+      "h1": [
+        "Бесплатная диагностика автомобиля"
+      ],
+      "description": "Бесплатная диагностика автомобиля - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/diagnostika-remont-zamena-forsunok",
+      "status": "200",
+      "error": null,
+      "title": "Диагностика / ремонт / замена форсунок",
+      "h1": [
+        "Диагностика / ремонт / замена форсунок"
+      ],
+      "description": "Диагностика / ремонт / замена форсунок - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "https://kingmotors52.ru/diagnostika-remont-zamena-tnvd",
+      "status": "200",
+      "error": null,
+      "title": "Диагностика / ремонт / замена ТНВД",
+      "h1": [
+        "Диагностика / ремонт / замена ТНВД"
+      ],
+      "description": "Диагностика / ремонт / замена ТНВД - заказать услугу...",
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    }
+  ],
+  "local_before": [
+    {
+      "url": "http://127.0.0.1:8765/",
+      "status": "200",
+      "error": null,
+      "title": "КингМоторс · дизайн-концепция",
+      "h1": [
+        "Ремонт и обслуживание без несогласованных работ"
+      ],
+      "description": null,
+      "robots": "noindex,nofollow",
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "http://127.0.0.1:8765/legal.html",
+      "status": "200",
+      "error": null,
+      "title": "Правовая информация · архив",
+      "h1": [
+        "Правовая информация"
+      ],
+      "description": null,
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "http://127.0.0.1:8765/rest.html",
+      "status": "200",
+      "error": null,
+      "title": null,
+      "h1": [],
+      "description": null,
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    },
+    {
+      "url": "http://127.0.0.1:8765/seo-not-found-check",
+      "status": "404",
+      "error": null,
+      "title": "Error response",
+      "h1": [
+        "Error response"
+      ],
+      "description": null,
+      "robots": null,
+      "canonical": null,
+      "json_ld": 0
+    }
+  ],
+  "live_resources": {
+    "root_head_status": 200,
+    "root_head_x_robots_tag": null,
+    "sitemap_status": 200,
+    "sitemap_urls": 14,
+    "robots_status": 200,
+    "unknown_status": 404,
+    "llms_status": 404,
+    "feed_status": 404
+  }
+}

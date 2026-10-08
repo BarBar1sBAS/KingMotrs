@@ -1,0 +1,171 @@
+/* All content is visible without motion enhancement. */
+.btn {
+  transition:
+    background-color var(--motion-fast) ease,
+    transform var(--motion-fast) var(--ease-out);
+}
+.btn:active:not(:focus-visible) {
+  transform: scale(var(--motion-press-scale));
+}
+.btn .arrow,
+.text-link > span[aria-hidden] {
+  display: inline-block;
+  transition: transform var(--motion-fast) ease;
+}
+.brand-intro {
+  position: absolute;
+  left: var(--gutter);
+  bottom: 26px;
+  width: 220px;
+  background: var(--ink);
+  padding: 14px 18px;
+  pointer-events: none;
+  z-index: 3;
+}
+.brand-intro[hidden] {
+  display: none;
+}
+.brand-intro svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+.intro-mark,
+.intro-name {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.hero-location:before {
+  content: none;
+}
+.hero-rule {
+  height: 1px;
+  width: 32px;
+  flex: none;
+  background: var(--red);
+  transform-origin: left;
+}
+/* Semantic phrases wrap naturally, including at 200% text size. */
+.hero-title-part {
+  display: block;
+}
+.hero h1 > br {
+  display: none;
+}
+.service-media {
+  display: block;
+  overflow: clip;
+}
+.service-photo {
+  transition: transform var(--motion-reveal) ease;
+}
+.step-line {
+  position: absolute;
+  left: 8px;
+  top: 28px;
+  bottom: 4px;
+  width: 1px;
+  background: var(--red);
+  transform-origin: top;
+}
+.service-steps li:last-child .step-line {
+  display: none;
+}
+.mobile-nav {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity var(--motion-menu) var(--ease-out),
+    transform var(--motion-menu) var(--ease-out);
+}
+.mobile-nav.motion-closed {
+  opacity: 0;
+  transform: translateY(calc(-1 * var(--motion-menu-distance)));
+  transition-duration: var(--motion-exit);
+}
+.service-dialog {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition:
+    opacity var(--motion-dialog) var(--ease-drawer),
+    transform var(--motion-dialog) var(--ease-drawer);
+}
+.service-dialog::backdrop {
+  opacity: 1;
+  transition: opacity var(--motion-dialog) var(--ease-drawer);
+}
+.service-dialog.motion-closed {
+  opacity: 0;
+  transform: translateY(var(--motion-dialog-distance)) scale(var(--motion-dialog-scale));
+  transition-duration: var(--motion-dialog-exit);
+}
+.service-dialog.motion-closed::backdrop {
+  opacity: 0;
+  transition-duration: var(--motion-dialog-exit);
+}
+.motion-instant,
+.motion-instant::backdrop {
+  transition: none !important;
+}
+@media (max-width: 767px) {
+  .brand-intro {
+    bottom: 50px;
+    width: 186px;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover {
+    background: var(--action-hover);
+  }
+  .text-link:hover {
+    color: var(--action);
+  }
+  .dialog-close:hover {
+    background: var(--line);
+  }
+  .service-card > :is(summary, .service-trigger):hover .service-photo {
+    transform: scale(var(--motion-hover-scale));
+  }
+  .btn:hover .arrow,
+  .text-link:hover > span[aria-hidden] {
+    transform: translate(
+      var(--motion-arrow-distance),
+      calc(-1 * var(--motion-arrow-distance))
+    );
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .btn:active:not(:focus-visible),
+  .btn:active,
+  .service-card > :is(summary, .service-trigger):hover .service-photo,
+  .btn:hover .arrow,
+  .text-link:hover > span[aria-hidden] {
+    transform: none;
+  }
+}
+
+/* Progressive enhancement: unsupported browsers keep ordinary native details. */
+@supports (interpolate-size: allow-keywords) and (transition-behavior: allow-discrete) {
+  .motion-ready details:not(.service-card)::details-content {
+    interpolate-size: allow-keywords;
+    block-size: 0;
+    overflow: clip;
+    transition:
+      block-size var(--motion-accordion) var(--ease-drawer),
+      content-visibility var(--motion-accordion) allow-discrete;
+  }
+  .motion-ready details:not(.service-card)[open]::details-content { block-size: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  details::details-content { transition: none !important; }
+}
+
+details[data-accordion-instant]::details-content { transition: none !important; }

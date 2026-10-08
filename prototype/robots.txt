@@ -1,0 +1,4 @@
+# Local design concept: HTML pages carry noindex.
+# Allow crawling so crawlers can read that directive.
+User-agent: *
+Allow: /

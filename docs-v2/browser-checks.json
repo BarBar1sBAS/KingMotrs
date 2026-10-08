@@ -1,0 +1,98 @@
+{
+  "widths": [
+    {
+      "width": 320,
+      "closed": true,
+      "modal": true,
+      "geometryStable": true,
+      "text200": true
+    },
+    {
+      "width": 360,
+      "closed": true,
+      "modal": true,
+      "geometryStable": true,
+      "text200": true
+    },
+    {
+      "width": 390,
+      "closed": true,
+      "modal": true,
+      "geometryStable": true,
+      "text200": true
+    },
+    {
+      "width": 600,
+      "closed": true,
+      "modal": true,
+      "geometryStable": true,
+      "text200": true
+    },
+    {
+      "width": 768,
+      "closed": true,
+      "modal": true,
+      "geometryStable": true,
+      "text200": true
+    },
+    {
+      "width": 900,
+      "closed": true,
+      "modal": true,
+      "geometryStable": true,
+      "text200": true
+    },
+    {
+      "width": 1024,
+      "closed": true,
+      "modal": true,
+      "geometryStable": true,
+      "text200": true
+    },
+    {
+      "width": 1199,
+      "closed": true,
+      "modal": true,
+      "geometryStable": true,
+      "text200": true
+    },
+    {
+      "width": 1200,
+      "closed": true,
+      "modal": true,
+      "geometryStable": true,
+      "text200": true
+    },
+    {
+      "width": 1440,
+      "closed": true,
+      "modal": true,
+      "geometryStable": true,
+      "text200": true
+    },
+    {
+      "width": 1600,
+      "closed": true,
+      "modal": true,
+      "geometryStable": true,
+      "text200": true
+    },
+    {
+      "width": 1920,
+      "closed": true,
+      "modal": true,
+      "geometryStable": true,
+      "text200": true
+    }
+  ],
+  "errors": [],
+  "localFailures": [],
+  "formRequests": [],
+  "browser": "151.0.7922.34",
+  "jobs": 33,
+  "focusAndHistory": true,
+  "demoForm": true,
+  "noJS": true,
+  "demoTeam": true,
+  "mapFallback": true
+}

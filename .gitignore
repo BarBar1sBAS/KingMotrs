@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+tmp/
+.DS_Store
+node_modules/
+dist/
+output-v2/build/
+output-v2/review/
+output-v2/pdf/rendered/
+*.pyc

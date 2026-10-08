@@ -1,0 +1,39 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "smoothAnchor": true,
+      "repeatedAnchor": true,
+      "reducedScroll": true,
+      "accordion": {
+        "closed": 77,
+        "opening": 171.359375,
+        "opened": 200.1875,
+        "closing": 94.296875
+      },
+      "reversal": true,
+      "keyboardInstant": true,
+      "reducedAccordion": true,
+      "nestedJob": true,
+      "modalExit": true
+    },
+    {
+      "width": 1440,
+      "smoothAnchor": true,
+      "repeatedAnchor": true,
+      "reducedScroll": true,
+      "accordion": {
+        "closed": 74.1875,
+        "opening": 134.265625,
+        "opened": 147.78125,
+        "closing": 91.578125
+      },
+      "reversal": true,
+      "keyboardInstant": true,
+      "reducedAccordion": true,
+      "nestedJob": true,
+      "modalExit": true
+    }
+  ],
+  "errors": []
+}

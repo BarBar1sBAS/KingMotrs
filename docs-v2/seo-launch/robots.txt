@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kingmotors52.ru/sitemap.xml

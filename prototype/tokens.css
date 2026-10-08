@@ -1,0 +1,89 @@
+@font-face {
+  font-family: Manrope;
+  src: url("assets/Manrope-Variable.ttf") format("truetype");
+  font-weight: 200 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: Golos;
+  src: url("assets/GolosText-Variable.ttf") format("truetype");
+  font-weight: 400 900;
+  font-display: swap;
+}
+:root {
+  --ink: #191c1e;
+  --ink-2: #25292b;
+  --paper: #f4f4f0;
+  --white: #fcfcf9;
+  --muted: #626865;
+  --line: #d8dcd7;
+  --red: #e51313;
+  --action: #ce1616;
+  --action-hover: #b70d0d;
+  --light: #c5cbc7;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --radius: 6px;
+  --content: 1328px;
+  --gutter: clamp(20px, 4vw, 72px);
+  --heading: Manrope, Golos, Arial, sans-serif;
+  --body: Golos, Arial, sans-serif;
+}
+
+:root {
+  --surface: #e7eae4;
+  --section-space: clamp(56px, 6vw, 88px);
+  --section-gap: clamp(40px, 4.5vw, 64px);
+  --motion-fast: 140ms;
+  --motion-reveal: 180ms;
+  --motion-menu: 220ms;
+  --motion-hero: 420ms;
+  --motion-status: 160ms;
+}
+@media (max-width: 767px) {
+  :root {
+    --gutter: 24px;
+  }
+}
+@media (max-width: 359px) {
+  :root {
+    --gutter: 18px;
+  }
+}
+
+/* Motion choreography: shared by CSS and WAAPI. */
+:root {
+  --motion-scene: 600ms;
+  --motion-dialog: 280ms;
+  --motion-dialog-exit: 240ms;
+  --motion-accordion: 240ms;
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+  --motion-dialog-distance: 12px;
+  --motion-exit: 180ms;
+  --motion-stagger: 60ms;
+  --motion-step-stagger: 80ms;
+  --motion-distance: 16px;
+  --motion-menu-distance: 8px;
+  --motion-mark-distance: 10px;
+  --motion-photo-scale: 1.035;
+  --motion-hover-scale: 1.025;
+  --motion-dialog-scale: 0.985;
+  --motion-press-scale: 0.98;
+  --motion-arrow-distance: 3px;
+  --motion-intro: 820ms;
+  --motion-mark: 320ms;
+  --motion-name: 360ms;
+  --motion-name-delay: 120ms;
+  --motion-intro-fade: 620ms;
+}
+@media (max-width: 767px) {
+  :root {
+    --motion-distance: 8px;
+    --motion-menu-distance: 4px;
+    --motion-dialog-distance: 6px;
+    --motion-mark-distance: 5px;
+    --motion-photo-scale: 1.0175;
+    --motion-hover-scale: 1.0125;
+    --motion-arrow-distance: 1.5px;
+  }
+}

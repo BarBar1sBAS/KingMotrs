@@ -1,0 +1,10 @@
+{
+  "staleHash": true,
+  "groupSwitch": true,
+  "backForward": true,
+  "directEntry": true,
+  "lifecycleEvents": true,
+  "realLeaveAndReturn": true,
+  "bookingContext": true,
+  "errors": []
+}

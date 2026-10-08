@@ -1,0 +1,27 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "introAnimations": 8,
+      "ctaImmediate": true,
+      "masks": 2,
+      "oneShot": true,
+      "keyboardInstant": true,
+      "reverseExit": true,
+      "reducedCancels": true,
+      "pagehideClean": true
+    },
+    {
+      "width": 1440,
+      "introAnimations": 8,
+      "ctaImmediate": true,
+      "masks": 6,
+      "oneShot": true,
+      "keyboardInstant": true,
+      "reverseExit": true,
+      "reducedCancels": true,
+      "pagehideClean": true
+    }
+  ],
+  "errors": []
+}

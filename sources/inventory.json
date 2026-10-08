@@ -1,0 +1,524 @@
+[
+  {
+    "url": "https://kingmotors52.ru/",
+    "slug": "home",
+    "title": "Автосервис КингМоторс в Нижнем Новгороде - ТО и ремонт легковых авто",
+    "h1": [
+      "Автосервис по ремонту иномарок в Нижнем Новгороде"
+    ],
+    "description": "Автосервис КингМоторс в Нижнем Новгороде - техобслуживание и ремонт легковых автомобилей. Сделать ремонт и пройти ТО авто по выгодным ценам. Звоните: 8 800 600 50 76!",
+    "canonical": "",
+    "text_file": "sources/pages/home.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/o-servise",
+    "slug": "o-servise",
+    "title": "О сервисе",
+    "h1": [
+      "О сервисе"
+    ],
+    "description": "О сервисе",
+    "canonical": "",
+    "text_file": "sources/pages/o-servise.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/uslugi",
+    "slug": "uslugi",
+    "title": "Услуги",
+    "h1": [
+      "Услуги"
+    ],
+    "description": "Услуги",
+    "canonical": "",
+    "text_file": "sources/pages/uslugi.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/obsluzhivanie-avtomobiley",
+    "slug": "obsluzhivanie-avtomobiley",
+    "title": "Обслуживание автомобилей",
+    "h1": [],
+    "description": "Обслуживание автомобилей",
+    "canonical": "",
+    "text_file": "sources/pages/obsluzhivanie-avtomobiley.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/remont-avtomobiley",
+    "slug": "remont-avtomobiley",
+    "title": "Ремонт автомобилей",
+    "h1": [],
+    "description": "Ремонт автомобилей",
+    "canonical": "",
+    "text_file": "sources/pages/remont-avtomobiley.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/diagnostika-avtomobiley",
+    "slug": "diagnostika-avtomobiley",
+    "title": "Диагностика автомобилей",
+    "h1": [],
+    "description": "Диагностика автомобилей",
+    "canonical": "",
+    "text_file": "sources/pages/diagnostika-avtomobiley.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/podbor-zapchastey",
+    "slug": "podbor-zapchastey",
+    "title": "Подбор запчастей",
+    "h1": [
+      "Подбор запчастей"
+    ],
+    "description": "Подбор запчастей - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/podbor-zapchastey.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/shinomontazh",
+    "slug": "shinomontazh",
+    "title": "Шиномонтаж",
+    "h1": [
+      "Шиномонтаж"
+    ],
+    "description": "Шиномонтаж - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/shinomontazh.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/moyka",
+    "slug": "moyka",
+    "title": "Химчистка автомобиля / мойка",
+    "h1": [
+      "Химчистка автомобиля / мойка"
+    ],
+    "description": "Химчистка автомобиля / мойка - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/moyka.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/korporativnym-klientam",
+    "slug": "korporativnym-klientam",
+    "title": "Корпоративным клиентам",
+    "h1": [
+      "Корпоративным клиентам"
+    ],
+    "description": "Корпоративным клиентам",
+    "canonical": "",
+    "text_file": "sources/pages/korporativnym-klientam.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/vakansii",
+    "slug": "vakansii",
+    "title": "Вакансии",
+    "h1": [
+      "Вакансии"
+    ],
+    "description": "Вакансии",
+    "canonical": "",
+    "text_file": "sources/pages/vakansii.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/kontaktyi",
+    "slug": "kontaktyi",
+    "title": "Контакты",
+    "h1": [
+      "Контакты"
+    ],
+    "description": "Контакты",
+    "canonical": "",
+    "text_file": "sources/pages/kontaktyi.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/soglasiem-na-obrabotku-personalnyh-dannyh",
+    "slug": "soglasiem-na-obrabotku-personalnyh-dannyh",
+    "title": "Согласием на обработку персональных данных",
+    "h1": [
+      "Согласием на обработку персональных данных"
+    ],
+    "description": "Согласием на обработку персональных данных",
+    "canonical": "",
+    "text_file": "sources/pages/soglasiem-na-obrabotku-personalnyh-dannyh.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/privacypolicy",
+    "slug": "privacypolicy",
+    "title": "Политика конфиденциальности",
+    "h1": [
+      "Политика конфиденциальности"
+    ],
+    "description": "Политика конфиденциальности",
+    "canonical": "",
+    "text_file": "sources/pages/privacypolicy.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/site-map",
+    "slug": "site-map",
+    "title": "Карта сайта",
+    "h1": [
+      "Карта сайта"
+    ],
+    "description": "Карта сайта",
+    "canonical": "",
+    "text_file": "sources/pages/site-map.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/tehnicheskoe-obsluzhivanie",
+    "slug": "tehnicheskoe-obsluzhivanie",
+    "title": "Техническое обслуживание",
+    "h1": [
+      "Техническое обслуживание"
+    ],
+    "description": "Техническое обслуживание - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/tehnicheskoe-obsluzhivanie.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/zamena-masla-v-dvigatele",
+    "slug": "zamena-masla-v-dvigatele",
+    "title": "Замена масла в двигателе",
+    "h1": [
+      "Замена масла в двигателе"
+    ],
+    "description": "Замена масла в двигателе - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/zamena-masla-v-dvigatele.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/zamena-masla-kpp",
+    "slug": "zamena-masla-kpp",
+    "title": "Замена масла КПП",
+    "h1": [
+      "Замена масла КПП"
+    ],
+    "description": "Замена масла КПП - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/zamena-masla-kpp.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/zamena-remnya-grm-dvigatelya",
+    "slug": "zamena-remnya-grm-dvigatelya",
+    "title": "Замена ремня ГРМ двигателя",
+    "h1": [
+      "Замена ремня ГРМ двигателя"
+    ],
+    "description": "Замена ремня ГРМ двигателя - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/zamena-remnya-grm-dvigatelya.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/zamena-tsepi-grm",
+    "slug": "zamena-tsepi-grm",
+    "title": "Замена цепи ГРМ",
+    "h1": [
+      "Замена цепи ГРМ"
+    ],
+    "description": "Замена цепи ГРМ - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/zamena-tsepi-grm.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/zamena-svecheykatushki-zazhiganiya",
+    "slug": "zamena-svecheykatushki-zazhiganiya",
+    "title": "Замена свечей/катушки зажигания",
+    "h1": [
+      "Замена свечей/катушки зажигания"
+    ],
+    "description": "Замена свечей/катушки зажигания - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/zamena-svecheykatushki-zazhiganiya.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/promyvka-dvigatelya-avtomobilya",
+    "slug": "promyvka-dvigatelya-avtomobilya",
+    "title": "Промывка двигателя автомобиля",
+    "h1": [
+      "Промывка двигателя автомобиля"
+    ],
+    "description": "Промывка двигателя автомобиля - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/promyvka-dvigatelya-avtomobilya.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/razval-shozhdenie-avtomobilya",
+    "slug": "razval-shozhdenie-avtomobilya",
+    "title": "Развал-схождение автомобиля",
+    "h1": [
+      "Развал-схождение автомобиля"
+    ],
+    "description": "Развал-схождение автомобиля - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/razval-shozhdenie-avtomobilya.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/zamena-filtrov-avtomobilya",
+    "slug": "zamena-filtrov-avtomobilya",
+    "title": "Замена фильтров автомобиля",
+    "h1": [
+      "Замена фильтров автомобиля"
+    ],
+    "description": "Замена фильтров автомобиля - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/zamena-filtrov-avtomobilya.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/zamena-amortizatorov-perednih-zadnih",
+    "slug": "zamena-amortizatorov-perednih-zadnih",
+    "title": "Замена амортизаторов (передних / задних)",
+    "h1": [
+      "Замена амортизаторов (передних / задних)"
+    ],
+    "description": "Замена амортизаторов (передних / задних) - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/zamena-amortizatorov-perednih-zadnih.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/zamena-podshipnikov-avtomobilya",
+    "slug": "zamena-podshipnikov-avtomobilya",
+    "title": "Замена подшипников автомобиля",
+    "h1": [
+      "Замена подшипников автомобиля"
+    ],
+    "description": "Замена подшипников автомобиля - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/zamena-podshipnikov-avtomobilya.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/zamena-stoek-stabilizatora",
+    "slug": "zamena-stoek-stabilizatora",
+    "title": "Замена стоек стабилизатора",
+    "h1": [
+      "Замена стоек стабилизатора"
+    ],
+    "description": "Замена стоек стабилизатора - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/zamena-stoek-stabilizatora.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/zamena-vtulok-stabilizatora",
+    "slug": "zamena-vtulok-stabilizatora",
+    "title": "Замена втулок стабилизатора",
+    "h1": [
+      "Замена втулок стабилизатора"
+    ],
+    "description": "Замена втулок стабилизатора - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/zamena-vtulok-stabilizatora.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/zamena-pylnik-shrusa-avto",
+    "slug": "zamena-pylnik-shrusa-avto",
+    "title": "Замена пыльник ШРУСа авто",
+    "h1": [
+      "Замена пыльник ШРУСа авто"
+    ],
+    "description": "Замена пыльник ШРУСа авто - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/zamena-pylnik-shrusa-avto.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/zamena-sharovyh-opor-avtomobilya",
+    "slug": "zamena-sharovyh-opor-avtomobilya",
+    "title": "Замена шаровых опор автомобиля",
+    "h1": [
+      "Замена шаровых опор автомобиля"
+    ],
+    "description": "Замена шаровых опор автомобиля - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/zamena-sharovyh-opor-avtomobilya.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/zamena-rulevoy-reyki-avtomobilya",
+    "slug": "zamena-rulevoy-reyki-avtomobilya",
+    "title": "Замена рулевой рейки автомобиля",
+    "h1": [
+      "Замена рулевой рейки автомобиля"
+    ],
+    "description": "Замена рулевой рейки автомобиля - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/zamena-rulevoy-reyki-avtomobilya.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/remont-tormoznoy-sistemy",
+    "slug": "remont-tormoznoy-sistemy",
+    "title": "Ремонт тормозной системы",
+    "h1": [
+      "Ремонт тормозной системы"
+    ],
+    "description": "Ремонт тормозной системы - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/remont-tormoznoy-sistemy.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/remont-generatora-benzo-dizelnyh",
+    "slug": "remont-generatora-benzo-dizelnyh",
+    "title": "Ремонт генератора (бензо / дизельных)",
+    "h1": [
+      "Ремонт генератора (бензо / дизельных)"
+    ],
+    "description": "Ремонт генератора (бензо / дизельных) - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/remont-generatora-benzo-dizelnyh.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/remont-kpp-mkpp-akpp",
+    "slug": "remont-kpp-mkpp-akpp",
+    "title": "Ремонт КПП (МКПП / АКПП)",
+    "h1": [
+      "Ремонт КПП (МКПП / АКПП)"
+    ],
+    "description": "Ремонт КПП (МКПП / АКПП) - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/remont-kpp-mkpp-akpp.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/remont-stsepleniya",
+    "slug": "remont-stsepleniya",
+    "title": "Ремонт сцепления",
+    "h1": [
+      "Ремонт сцепления"
+    ],
+    "description": "Ремонт сцепления - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/remont-stsepleniya.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/remont-dvigatelya",
+    "slug": "remont-dvigatelya",
+    "title": "Ремонт двигателя",
+    "h1": [
+      "Ремонт двигателя"
+    ],
+    "description": "Ремонт двигателя - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/remont-dvigatelya.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/remont-korobki-dsg",
+    "slug": "remont-korobki-dsg",
+    "title": "Ремонт коробки DSG",
+    "h1": [
+      "Ремонт коробки DSG"
+    ],
+    "description": "Ремонт коробки DSG - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/remont-korobki-dsg.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/diagnostika-remont-abs",
+    "slug": "diagnostika-remont-abs",
+    "title": "Диагностика / ремонт АБС",
+    "h1": [
+      "Диагностика / ремонт АБС"
+    ],
+    "description": "Диагностика / ремонт АБС - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/diagnostika-remont-abs.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/diagnostika-remont-pechki-v-avto",
+    "slug": "diagnostika-remont-pechki-v-avto",
+    "title": "Диагностика / ремонт печки в авто",
+    "h1": [
+      "Диагностика / ремонт печки в авто"
+    ],
+    "description": "Диагностика / ремонт печки в авто - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/diagnostika-remont-pechki-v-avto.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/diagnostika-remont-avto-konditsionerov",
+    "slug": "diagnostika-remont-avto-konditsionerov",
+    "title": "Диагностика / ремонт авто кондиционеров",
+    "h1": [
+      "Диагностика / ремонт авто кондиционеров"
+    ],
+    "description": "Диагностика / ремонт авто кондиционеров - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/diagnostika-remont-avto-konditsionerov.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/diagnostika-remont-elektrooborudovaniya-avto",
+    "slug": "diagnostika-remont-elektrooborudovaniya-avto",
+    "title": "Диагностика / ремонт электрооборудования авто",
+    "h1": [
+      "Диагностика / ремонт электрооборудования авто"
+    ],
+    "description": "Диагностика / ремонт электрооборудования авто - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/diagnostika-remont-elektrooborudovaniya-avto.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/diagnostika-remont-tormozov",
+    "slug": "diagnostika-remont-tormozov",
+    "title": "Диагностика / ремонт тормозов",
+    "h1": [
+      "Диагностика / ремонт тормозов"
+    ],
+    "description": "Диагностика / ремонт тормозов - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/diagnostika-remont-tormozov.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/diagnostika-remont-dvigatelya",
+    "slug": "diagnostika-remont-dvigatelya",
+    "title": "Диагностика / ремонт двигателя",
+    "h1": [
+      "Диагностика / ремонт двигателя"
+    ],
+    "description": "Диагностика / ремонт двигателя - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/diagnostika-remont-dvigatelya.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/diagnostika-remont-podveski",
+    "slug": "diagnostika-remont-podveski",
+    "title": "Диагностика / ремонт подвески",
+    "h1": [
+      "Диагностика / ремонт подвески"
+    ],
+    "description": "Диагностика / ремонт подвески - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/diagnostika-remont-podveski.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/diagnostika-proverka-avtomobilya-pered-pokupkoy",
+    "slug": "diagnostika-proverka-avtomobilya-pered-pokupkoy",
+    "title": "Диагностика / проверка автомобиля перед покупкой",
+    "h1": [
+      "Диагностика / проверка автомобиля перед покупкой"
+    ],
+    "description": "Диагностика / проверка автомобиля перед покупкой - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/diagnostika-proverka-avtomobilya-pered-pokupkoy.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/besplatnaya-diagnostika-avtomobilya",
+    "slug": "besplatnaya-diagnostika-avtomobilya",
+    "title": "Бесплатная диагностика автомобиля",
+    "h1": [
+      "Бесплатная диагностика автомобиля"
+    ],
+    "description": "Бесплатная диагностика автомобиля - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/besplatnaya-diagnostika-avtomobilya.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/diagnostika-remont-zamena-forsunok",
+    "slug": "diagnostika-remont-zamena-forsunok",
+    "title": "Диагностика / ремонт / замена форсунок",
+    "h1": [
+      "Диагностика / ремонт / замена форсунок"
+    ],
+    "description": "Диагностика / ремонт / замена форсунок - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/diagnostika-remont-zamena-forsunok.txt"
+  },
+  {
+    "url": "https://kingmotors52.ru/diagnostika-remont-zamena-tnvd",
+    "slug": "diagnostika-remont-zamena-tnvd",
+    "title": "Диагностика / ремонт / замена ТНВД",
+    "h1": [
+      "Диагностика / ремонт / замена ТНВД"
+    ],
+    "description": "Диагностика / ремонт / замена ТНВД - заказать услугу...",
+    "canonical": "",
+    "text_file": "sources/pages/diagnostika-remont-zamena-tnvd.txt"
+  }
+]

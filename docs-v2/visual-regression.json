@@ -1,0 +1,90 @@
+[
+  {
+    "file": "home-320.png",
+    "before": [
+      320,
+      9618
+    ],
+    "after": [
+      320,
+      9618
+    ],
+    "changed_pixels": 9763,
+    "bbox": [
+      18,
+      2488,
+      153,
+      2623
+    ]
+  },
+  {
+    "file": "modal-390.png",
+    "before": [
+      390,
+      1000
+    ],
+    "after": [
+      390,
+      1000
+    ],
+    "changed_pixels": 0,
+    "bbox": null
+  },
+  {
+    "file": "modal-320.png",
+    "before": [
+      320,
+      1000
+    ],
+    "after": [
+      320,
+      1000
+    ],
+    "changed_pixels": 0,
+    "bbox": null
+  },
+  {
+    "file": "home-390.png",
+    "before": [
+      390,
+      8949
+    ],
+    "after": [
+      390,
+      8949
+    ],
+    "changed_pixels": 52968,
+    "bbox": [
+      24,
+      111,
+      366,
+      3566
+    ]
+  },
+  {
+    "file": "home-360.png",
+    "before": [
+      360,
+      9417
+    ],
+    "after": [
+      360,
+      9417
+    ],
+    "changed_pixels": 0,
+    "bbox": null
+  },
+  {
+    "file": "modal-360.png",
+    "before": [
+      360,
+      1000
+    ],
+    "after": [
+      360,
+      1000
+    ],
+    "changed_pixels": 0,
+    "bbox": null
+  }
+]

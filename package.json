@@ -1,0 +1,16 @@
+{
+  "name": "kingmotors-static",
+  "private": true,
+  "version": "2.0.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts-v2/run.cjs build",
+    "verify": "node scripts-v2/run.cjs verify",
+    "export": "node scripts-v2/run.cjs export"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

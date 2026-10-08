@@ -1,0 +1,39 @@
+{
+  "anchors": true,
+  "deepLinks": 33,
+  "nonServiceDisclosures": 15,
+  "menuCycles": true,
+  "menuAnchorFocus": true,
+  "formCancellation": true,
+  "formPreserved": true,
+  "reducedMotion": true,
+  "storageDenied": true,
+  "noJsDisabled": true,
+  "text200": [
+    {
+      "width": 320,
+      "closedPage": true
+    },
+    {
+      "width": 390,
+      "closedPage": true
+    },
+    {
+      "width": 768,
+      "closedPage": true
+    },
+    {
+      "width": 1024,
+      "closedPage": true
+    },
+    {
+      "width": 1440,
+      "closedPage": true
+    },
+    {
+      "width": 1920,
+      "closedPage": true
+    }
+  ],
+  "errors": []
+}
