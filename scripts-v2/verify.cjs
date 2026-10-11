@@ -72,8 +72,16 @@ async function main() {
       assert.equal(await reviews.getAttribute("src"), "https://yandex.ru/maps-reviews-widget/13496778418?comments");
       assert.equal(await reviews.getAttribute("loading"), "lazy");
       const bounds = await reviews.boundingBox();
-      assert(bounds.width >= 300 && bounds.width <= 760);
+      assert(bounds.width >= 300 && bounds.width <= 760, `${width}: reviews iframe width ${bounds.width}`);
       assert.equal(bounds.height, 600);
+      if (width === 320) {
+        // Reserve space for classic desktop scrollbars, including on macOS.
+        const gutter = await p.addStyleTag({ content: "html { scrollbar-gutter: stable; }" });
+        const withGutter = await reviews.boundingBox();
+        assert(withGutter.width >= 300, `320 with scrollbar: reviews iframe width ${withGutter.width}`);
+        await noOverflow(p, "320 with scrollbar");
+        await gutter.evaluate((element) => element.remove());
+      }
       assert(
         await p.evaluate(
           () =>

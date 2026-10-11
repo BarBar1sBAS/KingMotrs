@@ -2038,7 +2038,7 @@ html.service-modal-open {
   .reviews-position { margin-right: auto; }
 }
 @media (max-width: 335px) {
-  #reviews > .wrap { width: calc(100% - 20px); }
+  #reviews > .wrap { width: min(100%, max(300px, calc(100% - 20px))); }
 }
 
 /* Owner's October copy: hierarchy and intrinsic height for longer Russian text. */
