@@ -10,8 +10,8 @@ from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://kingmotors52.ru/"
-TITLE = "Автосервис в Нижнем Новгороде — ремонт и ТО | КингМоторс"
-DESCRIPTION = "КингМоторс: ремонт, диагностика и обслуживание автомобилей в Нижнем Новгороде. Согласуем работы и стоимость до ремонта. Московское шоссе, 12А. Запись по телефону."
+TITLE = "Автосервис в Нижнем Новгороде — КингМоторс"
+DESCRIPTION = "КингМоторс, Московское шоссе, 12А: ремонт двигателя, подвески, АКПП, DSG и вариаторов. Согласуем стоимость до работ. Диагностика — в счёт ремонта"
 
 
 def enrich(html):
@@ -65,6 +65,7 @@ def enrich(html):
                 "addressCountry": "RU",
             },
             "logo": SITE + "assets/logo.svg",
+            "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "19:00"}],
         },
         {
             "@type": "WebSite",
@@ -134,7 +135,7 @@ def build_launch_files(soup, services):
         "# КингМоторс\n\n"
         "> Автосервис в Нижнем Новгороде, Московское шоссе, 12А.\n\n"
         "## Сведения\n\nИсточник: содержание официального сайта. Стоимость и состав работ "
-        "согласуются индивидуально. Исторические цены не являются действующим прайсом. "
+        "согласуются индивидуально. Цены подтверждены владельцем 11.10.2026: указаны за работу без запчастей; итог согласуется до начала. "
         "Иллюстрации концепции не документируют реальное помещение или сотрудников.\n\n"
         "## Услуги и работы\n\n" + links + "\n\n## Контакты\n\n"
         f"- [Контакты и телефон]({SITE}#contacts)\n- [Вопросы перед визитом]({SITE}#faq)\n",
@@ -146,7 +147,7 @@ def build_launch_files(soup, services):
     )
     assert len(rows) == 48
     with (out / "redirects.csv").open("w") as f:
-        writer = csv.writer(f)
+        writer = csv.writer(f, lineterminator="\n")
         writer.writerow(["source", "target", "status", "note"])
         for url, target in rows:
             path = urlsplit(url).path
@@ -170,7 +171,7 @@ def build_launch_files(soup, services):
                 ]
             )
     with (ROOT / "docs-v2/seo-content-inventory.csv").open("w") as f:
-        writer = csv.writer(f)
+        writer = csv.writer(f, lineterminator="\n")
         writer.writerow(
             [
                 "url",

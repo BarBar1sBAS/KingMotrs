@@ -87,7 +87,7 @@ const assert = require("node:assert/strict"),
       // Reverse the in-flight exit using the same service, as a history change can do.
       await p.evaluate(() =>
         openService(
-          document.querySelector("#service-maintenance"),
+          document.querySelector("#service-repair"),
           null,
           null,
           true,
@@ -150,7 +150,6 @@ const assert = require("node:assert/strict"),
       for (const selector of [
         ".about-image",
         ".service-steps",
-        ".reviews-layout",
       ]) {
         await p.evaluate(
           (sel) =>

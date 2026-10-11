@@ -11,8 +11,9 @@
   font-display: swap;
 }
 :root {
-  --ink: #191c1e;
-  --ink-2: #25292b;
+  --ink: #243e42;
+  --ink-rgb: 36 62 66;
+  --ink-2: #304c50;
   --paper: #f4f4f0;
   --white: #fcfcf9;
   --muted: #626865;
@@ -20,7 +21,7 @@
   --red: #e51313;
   --action: #ce1616;
   --action-hover: #b70d0d;
-  --light: #c5cbc7;
+  --light: #cddad8;
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
   --radius: 6px;

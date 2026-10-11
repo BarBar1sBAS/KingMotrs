@@ -1,10 +1,12 @@
 {
-  "date": "2026-10-08",
-  "deep_links_open_and_close": 39,
-  "nojs_jobs_readable": 33,
-  "nojs_faq_details_open": 10,
+  "date": "2026-10-11",
+  "deep_links_open_and_close": 38,
+  "nojs_jobs_readable": 32,
+  "nojs_faq_details_open": 18,
   "nojs_navigation": true,
-  "nojs_reviews_visible": 7,
+  "nojs_reviews_link": true,
+  "nojs_review_cards": 7,
   "nojs_submit_disabled": true,
+  "legacy_links_js_and_nojs": 4,
   "errors": []
 }

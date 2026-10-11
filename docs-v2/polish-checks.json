@@ -1,7 +1,7 @@
 {
   "anchors": true,
-  "deepLinks": 33,
-  "nonServiceDisclosures": 15,
+  "deepLinks": 32,
+  "nonServiceDisclosures": 22,
   "menuCycles": true,
   "menuAnchorFocus": true,
   "formCancellation": true,

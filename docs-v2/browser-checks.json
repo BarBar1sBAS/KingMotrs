@@ -89,10 +89,13 @@
   "localFailures": [],
   "formRequests": [],
   "browser": "151.0.7922.34",
-  "jobs": 33,
+  "jobs": 32,
   "focusAndHistory": true,
   "demoForm": true,
   "noJS": true,
-  "demoTeam": true,
-  "mapFallback": true
+  "teamRemoved": true,
+  "mapFallback": true,
+  "reviewsWidget": true,
+  "reviewsCarousel": true,
+  "reviewsFallback": true
 }

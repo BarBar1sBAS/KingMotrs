@@ -1,0 +1,464 @@
+{
+  "method": "Minimum contrast across complete text line rectangles in Chromium screenshot with text fill hidden; conservative background sampling.",
+  "hero": [
+    {
+      "width": 320,
+      "text": "КингМоторс / Нижний Новгород",
+      "contrast": 8.88,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 320,
+      "text": "Ремонт и обслуживание",
+      "contrast": 11.09,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "width": 320,
+      "text": "без несогласованных работ",
+      "contrast": 11.09,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "width": 320,
+      "text": "Разберёмся в задаче, объясним решение и согласуем стоимость до начала ремонта.",
+      "contrast": 7.93,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 320,
+      "text": "Записаться в сервис",
+      "contrast": 5.45,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 320,
+      "text": "↗",
+      "contrast": 5.45,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 320,
+      "text": "8 906 366 49 11",
+      "contrast": 11.09,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 320,
+      "text": "Иллюстрация дизайн-концепции",
+      "contrast": 6.38,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 390,
+      "text": "КингМоторс / Нижний Новгород",
+      "contrast": 8.88,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 390,
+      "text": "Ремонт и обслуживание",
+      "contrast": 11.09,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "width": 390,
+      "text": "без несогласованных работ",
+      "contrast": 11.09,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "width": 390,
+      "text": "Разберёмся в задаче, объясним решение и согласуем стоимость до начала ремонта.",
+      "contrast": 7.93,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 390,
+      "text": "Записаться в сервис",
+      "contrast": 5.45,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 390,
+      "text": "↗",
+      "contrast": 5.45,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 390,
+      "text": "8 906 366 49 11",
+      "contrast": 11.09,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 390,
+      "text": "Иллюстрация дизайн-концепции",
+      "contrast": 6.38,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 768,
+      "text": "КингМоторс / Нижний Новгород",
+      "contrast": 5.97,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 768,
+      "text": "Ремонт и обслуживание",
+      "contrast": 6.51,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "width": 768,
+      "text": "без несогласованных работ",
+      "contrast": 6.27,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "width": 768,
+      "text": "Разберёмся в задаче, объясним решение и согласуем стоимость до начала ремонта.",
+      "contrast": 5.77,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 768,
+      "text": "Записаться в сервис",
+      "contrast": 5.45,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 768,
+      "text": "↗",
+      "contrast": 5.45,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 768,
+      "text": "8 906 366 49 11",
+      "contrast": 7.04,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 768,
+      "text": "Иллюстрация дизайн-концепции",
+      "contrast": 8.48,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1024,
+      "text": "КингМоторс / Нижний Новгород",
+      "contrast": 7.46,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1024,
+      "text": "Ремонт и обслуживание",
+      "contrast": 6.71,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "width": 1024,
+      "text": "без несогласованных работ",
+      "contrast": 6.4,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "width": 1024,
+      "text": "Разберёмся в задаче, объясним решение и согласуем стоимость до начала ремонта.",
+      "contrast": 6.16,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1024,
+      "text": "Записаться в сервис",
+      "contrast": 5.45,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1024,
+      "text": "↗",
+      "contrast": 5.45,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1024,
+      "text": "8 906 366 49 11",
+      "contrast": 8.09,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1024,
+      "text": "Иллюстрация дизайн-концепции",
+      "contrast": 7.38,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1199,
+      "text": "КингМоторс / Нижний Новгород",
+      "contrast": 7.94,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1199,
+      "text": "Ремонт и обслуживание",
+      "contrast": 6.79,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "width": 1199,
+      "text": "без несогласованных работ",
+      "contrast": 6.38,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "width": 1199,
+      "text": "Разберёмся в задаче, объясним решение и согласуем стоимость до начала ремонта.",
+      "contrast": 6.97,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1199,
+      "text": "Записаться в сервис",
+      "contrast": 5.45,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1199,
+      "text": "↗",
+      "contrast": 5.45,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1199,
+      "text": "8 906 366 49 11",
+      "contrast": 8.9,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1199,
+      "text": "Иллюстрация дизайн-концепции",
+      "contrast": 7.29,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1200,
+      "text": "КингМоторс / Нижний Новгород",
+      "contrast": 8.08,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1200,
+      "text": "Ремонт и обслуживание",
+      "contrast": 6.92,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "width": 1200,
+      "text": "без несогласованных работ",
+      "contrast": 5.5,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "width": 1200,
+      "text": "Разберёмся в задаче, объясним решение и согласуем стоимость до начала ремонта.",
+      "contrast": 7.08,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1200,
+      "text": "Записаться в сервис",
+      "contrast": 5.45,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1200,
+      "text": "↗",
+      "contrast": 5.45,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1200,
+      "text": "8 906 366 49 11",
+      "contrast": 9.17,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1200,
+      "text": "Иллюстрация дизайн-концепции",
+      "contrast": 6.4,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "text": "КингМоторс / Нижний Новгород",
+      "contrast": 9.11,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "text": "Ремонт и обслуживание",
+      "contrast": 6.92,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "text": "без несогласованных работ",
+      "contrast": 5.12,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "text": "Разберёмся в задаче, объясним решение и согласуем стоимость до начала ремонта.",
+      "contrast": 7.65,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "text": "Записаться в сервис",
+      "contrast": 5.45,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "text": "↗",
+      "contrast": 5.45,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "text": "8 906 366 49 11",
+      "contrast": 9.46,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "text": "Иллюстрация дизайн-концепции",
+      "contrast": 6.28,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1920,
+      "text": "КингМоторс / Нижний Новгород",
+      "contrast": 8.2,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1920,
+      "text": "Ремонт и обслуживание",
+      "contrast": 6.73,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "width": 1920,
+      "text": "без несогласованных работ",
+      "contrast": 4.9,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "width": 1920,
+      "text": "Разберёмся в задаче, объясним решение и согласуем стоимость до начала ремонта.",
+      "contrast": 7.08,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1920,
+      "text": "Записаться в сервис",
+      "contrast": 5.45,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1920,
+      "text": "↗",
+      "contrast": 5.45,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1920,
+      "text": "8 906 366 49 11",
+      "contrast": 10.35,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "width": 1920,
+      "text": "Иллюстрация дизайн-концепции",
+      "contrast": 7.44,
+      "required": 4.5,
+      "pass": true
+    }
+  ],
+  "solid_pairs": {
+    "ink/paper": 10.34,
+    "white/ink": 11.09,
+    "light/ink": 7.93,
+    "light/ink-2": 6.42,
+    "white/action": 5.45,
+    "white/action-hover": 6.64,
+    "muted/paper": 5.16,
+    "muted/white": 5.54,
+    "action/paper": 5.08
+  }
+}

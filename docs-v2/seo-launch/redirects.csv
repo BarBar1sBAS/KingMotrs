@@ -5,9 +5,9 @@ source,target,status,note
 /obsluzhivanie-avtomobiley,/#service-maintenance,301,launch candidate
 /remont-avtomobiley,/#service-repair,301,launch candidate
 /diagnostika-avtomobiley,/#service-diagnostics,301,launch candidate
-/podbor-zapchastey,/#service-parts,301,launch candidate
-/shinomontazh,/#service-tires,301,launch candidate
-/moyka,/#service-wash,301,launch candidate
+/podbor-zapchastey,/#service-other,301,launch candidate
+/shinomontazh,/#service-other,301,launch candidate
+/moyka,/#services,301,launch candidate
 /korporativnym-klientam,/#business,301,launch candidate
 /vakansii,/#careers,301,launch candidate
 /kontaktyi,/#contacts,301,launch candidate
@@ -44,6 +44,6 @@ source,target,status,note
 /diagnostika-remont-dvigatelya,/#detail-diagnostika-remont-dvigatelya,301,launch candidate
 /diagnostika-remont-podveski,/#detail-diagnostika-remont-podveski,301,launch candidate
 /diagnostika-proverka-avtomobilya-pered-pokupkoy,/#detail-diagnostika-proverka-avtomobilya-pered-pokupkoy,301,launch candidate
-/besplatnaya-diagnostika-avtomobilya,/#detail-besplatnaya-diagnostika-avtomobilya,301,launch candidate
+/besplatnaya-diagnostika-avtomobilya,/#service-diagnostics,301,launch candidate
 /diagnostika-remont-zamena-forsunok,/#detail-diagnostika-remont-zamena-forsunok,301,launch candidate
 /diagnostika-remont-zamena-tnvd,/#detail-diagnostika-remont-zamena-tnvd,301,launch candidate

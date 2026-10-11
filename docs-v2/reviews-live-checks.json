@@ -1,0 +1,80 @@
+{
+  "before": [
+    {
+      "cls": "badge__comments",
+      "top": 0,
+      "height": 290,
+      "overflow": "hidden"
+    },
+    {
+      "cls": "comment__text",
+      "top": 0,
+      "height": 80,
+      "overflow": "hidden"
+    },
+    {
+      "cls": "comment__text",
+      "top": 0,
+      "height": 80,
+      "overflow": "hidden"
+    },
+    {
+      "cls": "comment__text",
+      "top": 0,
+      "height": 80,
+      "overflow": "hidden"
+    },
+    {
+      "cls": "comment__text",
+      "top": 0,
+      "height": 80,
+      "overflow": "hidden"
+    },
+    {
+      "cls": "comment__text",
+      "top": 0,
+      "height": 80,
+      "overflow": "hidden"
+    }
+  ],
+  "after": [
+    {
+      "cls": "badge__comments",
+      "top": 0,
+      "height": 290,
+      "overflow": "hidden"
+    },
+    {
+      "cls": "comment__text",
+      "top": 0,
+      "height": 80,
+      "overflow": "hidden"
+    },
+    {
+      "cls": "comment__text",
+      "top": 0,
+      "height": 80,
+      "overflow": "hidden"
+    },
+    {
+      "cls": "comment__text",
+      "top": 0,
+      "height": 80,
+      "overflow": "hidden"
+    },
+    {
+      "cls": "comment__text",
+      "top": 0,
+      "height": 80,
+      "overflow": "hidden"
+    },
+    {
+      "cls": "comment__text",
+      "top": 0,
+      "height": 80,
+      "overflow": "hidden"
+    }
+  ],
+  "allReviewsURL": "https://yandex.ru/maps/org/kingmotors/13496778418/reviews/",
+  "scrolled": false
+}

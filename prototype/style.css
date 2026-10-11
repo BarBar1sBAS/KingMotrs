@@ -227,10 +227,10 @@ select:focus-visible {
   z-index: -2;
   background: linear-gradient(
     90deg,
-    rgba(14, 17, 18, 0.96) 0%,
-    rgba(14, 17, 18, 0.86) 27%,
-    rgba(14, 17, 18, 0.16) 66%,
-    rgba(14, 17, 18, 0.03) 100%
+    rgb(var(--ink-rgb) / 0.96) 0%,
+    rgb(var(--ink-rgb) / 0.86) 45%,
+    rgb(var(--ink-rgb) / 0.16) 85%,
+    rgb(var(--ink-rgb) / 0.03) 100%
   );
 }
 .hero-content {
@@ -498,7 +498,7 @@ select:focus-visible {
   bottom: 16px;
   left: 24px;
   color: var(--white);
-  background: rgba(25, 28, 30, 0.85);
+  background: rgb(var(--ink-rgb) / 0.85);
   padding: 5px 9px;
   font-size: 11px;
 }
@@ -974,9 +974,9 @@ select:focus-visible {
   .hero:before {
     background: linear-gradient(
       90deg,
-      rgba(14, 17, 18, 0.94),
-      rgba(14, 17, 18, 0.75) 35%,
-      rgba(14, 17, 18, 0.06)
+      rgb(var(--ink-rgb) / 0.94),
+      rgb(var(--ink-rgb) / 0.75) 90%,
+      rgb(var(--ink-rgb) / 0.06)
     );
   }
   .service-card {
@@ -1456,7 +1456,7 @@ select:focus-visible {
     padding-right: 20px;
   }
   .hero-caption {
-    background: rgba(25, 28, 30, 0.7);
+    background: rgb(var(--ink-rgb) / 0.7);
     padding: 4px 7px;
   }
   .footer-bottom {
@@ -1475,7 +1475,7 @@ select:focus-visible {
   flex-wrap: wrap;
 }
 .hero-caption {
-  background: rgba(25, 28, 30, 0.82);
+  background: rgb(var(--ink-rgb) / 0.82);
   padding: 4px 8px;
 }
 .service-card:nth-child(5) {
@@ -1575,7 +1575,7 @@ select:focus-visible {
       180deg,
       var(--ink) 0%,
       var(--ink) calc(100% - 335px),
-      rgba(25, 28, 30, 0.25) calc(100% - 300px),
+      rgb(var(--ink-rgb) / 0.25) calc(100% - 300px),
       transparent calc(100% - 260px)
     );
   }
@@ -1886,7 +1886,7 @@ html.service-modal-open {
   flex-direction: column;
 }
 .service-dialog::backdrop {
-  background: rgb(15 18 20 / 0.72);
+  background: rgb(var(--ink-rgb) / 0.72);
 }
 .dialog-header {
   display: flex;
@@ -1986,56 +1986,84 @@ html.service-modal-open {
   }
 }
 
-/* Fictional demo team: a static portrait list, readable without JavaScript. */
-.team-heading {
-  margin-bottom: 32px;
+/* Live Yandex widget alongside the preserved reviews, in the v2 palette. */
+#reviews > .wrap { position: relative; }
+.reviews-head { display: flex; align-items: center; }
+.motion-ready .reviews-head { padding-right: 200px; }
+.reviews-head h2 { margin-bottom: 16px; }
+.reviews-head .text-link { margin-top: 0; }
+.reviews-controls[hidden] { display: none; }
+.reviews-controls { position: absolute; right: 0; top: 28px; display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.reviews-position { color: var(--muted); font-size: 14px; margin-right: 12px; font-variant-numeric: tabular-nums; }
+.reviews-controls button {
+  display: grid; place-items: center; width: 48px; min-height: 48px;
+  border: 0; border-radius: var(--radius); background: var(--action);
+  color: var(--white); font: inherit; font-size: 24px; cursor: pointer;
 }
-.team-notice {
-  margin-top: 16px;
-  max-width: 58ch;
-  color: var(--muted);
-  font-size: 14px;
+.reviews-controls button:hover:not(:disabled) { background: var(--action-hover); }
+.reviews-controls button:disabled { background: var(--surface); color: var(--muted); cursor: default; }
+.reviews-showcase { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 20px; align-items: start; }
+.reviews-widget { width: 100%; max-width: 760px; margin-inline: auto; }
+.reviews-widget iframe { display: block; width: 100%; height: 600px; border: 0; }
+.reviews-selection { min-width: 0; }
+.reviews-rail {
+  display: grid; grid-auto-flow: column; grid-auto-columns: 100%; gap: 20px;
+  overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain;
+  scrollbar-width: thin; scrollbar-color: var(--line) transparent;
+  padding-bottom: 12px;
 }
-.team-list {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 32px 20px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.reviews-rail:focus-visible { outline-offset: -3px; }
+.review-card {
+  min-width: 0; min-height: 600px; padding: 26px 24px;
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+  scroll-snap-align: start; overflow-wrap: anywhere;
 }
-.team-member {
-  min-width: 0;
+.review-card header { padding-bottom: 22px; margin-bottom: 24px; border-bottom: 1px solid var(--line); }
+.review-card h3 { font-family: var(--heading); font-size: 19px; font-weight: 700; line-height: 1.35; letter-spacing: -.025em; }
+.review-card header p { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
+.review-card blockquote { margin: 0; font-size: 16px; line-height: 1.6; }
+.reviews-source { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
+@media (min-width: 1000px) { .reviews-rail { grid-auto-columns: calc((100% - 20px) / 2); } }
+@media (min-width: 1366px) { .reviews-rail { grid-auto-columns: calc((100% - 40px) / 3); } }
+@media (max-width: 767px) {
+  .reviews-head { align-items: flex-start; }
+  .motion-ready .reviews-head { padding-right: 0; }
+  .reviews-controls { position: static; margin-bottom: 18px; justify-content: flex-end; }
+  .reviews-showcase { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .review-card { min-height: 480px; }
 }
-.team-member img {
+@media (max-width: 599px) {
+  .reviews-head { flex-direction: column; gap: 20px; }
+  .reviews-controls { align-self: stretch; justify-content: flex-end; }
+  .reviews-position { margin-right: auto; }
+}
+@media (max-width: 335px) {
+  #reviews > .wrap { width: calc(100% - 20px); }
+}
+
+/* Owner's October copy: hierarchy and intrinsic height for longer Russian text. */
+.hero h1 {
+  max-width: 850px;
+}
+.hero h1 .second {
   display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border-radius: var(--radius);
-  background: var(--surface);
+  font-size: .7em;
+  line-height: 1.22;
+  letter-spacing: -.035em;
+  margin-top: .35em;
 }
-.team-member h3 {
-  margin: 18px 0 6px;
-  font-size: 20px;
-  line-height: 1.3;
-  letter-spacing: -0.025em;
-  overflow-wrap: anywhere;
+.hero-offer {
+  max-width: 55ch;
+  margin-top: 20px;
+  color: var(--white);
 }
-.team-member p {
-  color: var(--muted);
-  font-size: 15px;
-  line-height: 1.5;
-  overflow-wrap: anywhere;
+.service-info p {
+  max-width: 48ch;
 }
-@media (max-width: 1199px) {
-  .team-list {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
+.service-content > p + p {
+  margin-top: 18px;
 }
 @media (max-width: 767px) {
-  .team-list {
-    grid-template-columns: minmax(0, 1fr);
-  }
+  .hero-offer { font-size: 16px; }
+  .hero h1 .second { font-size: .74em; }
 }

@@ -71,7 +71,7 @@ async function main() {
     const env = { ...process.env, BASE_URL: base };
     if (mode === "verify") {
       run(process.execPath, ["scripts-v2/verify.cjs"], env);
-      for (const file of ["navigation-check", "polish-check", "motion-check", "smooth-check", "seo-browser"])
+      for (const file of ["navigation-check", "polish-check", "motion-check", "smooth-check", "reviews-check", "seo-browser"])
         run(process.execPath, [`scripts-v2/${file}.cjs`], env);
       run(python, ["scripts-v2/verify_seo.py"], env);
     } else {

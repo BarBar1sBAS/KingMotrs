@@ -33,7 +33,7 @@ assert status == 200
 soup = BeautifulSoup(html, "html.parser")
 assert len(soup.select("h1")) == 1
 assert len(soup.select(".service-card")) == 6
-assert len(soup.select(".job")) == 33
+assert len(soup.select(".job")) == 32
 assert soup.select_one('meta[name="robots"]')["content"] == "noindex,nofollow"
 assert soup.select_one('link[rel="canonical"]')["href"] == SITE
 assert 100 <= len(soup.select_one('meta[name="description"]')["content"]) <= 180
@@ -47,13 +47,13 @@ graph = json.loads(soup.select_one('script[type="application/ld+json"]').string)
     "@graph"
 ]
 services = [x for x in graph if x["@type"] == "Service"]
-assert len(services) == 39
+assert len(services) == 38
 for service in services:
     target = soup.find(id=service["url"].split("#")[1])
     assert service["name"] in target.get_text(" ", strip=True)
     assert service["description"] in target.get_text(" ", strip=True)
 questions = next(x["mainEntity"] for x in graph if isinstance(x["@type"], list))
-assert len(questions) == 9
+assert len(questions) == 17
 for q in questions:
     assert q["name"] in soup.select_one(".faq-list").get_text(" ", strip=True)
     assert q["acceptedAnswer"]["text"] in soup.select_one(".faq-list").get_text(
@@ -62,21 +62,49 @@ for q in questions:
 assert not any(
     key in html for key in ['"aggregateRating"', '"priceRange"', '"openingHours"']
 )
+# Owner-approved editorial contract, distinct from archived source counts.
+content = json.loads((ROOT / "docs-v2/site-content.json").read_text(encoding="utf-8"))
+assert len(json.loads((ROOT / "sources/inventory.json").read_text())) == 48
+assert len(content["jobs"]) == len({j["slug"] for j in content["jobs"]}) == 32
+assert [card["id"] for card in soup.select(".service-card")] == [
+    "service-repair", "service-suspension", "service-transmission",
+    "service-diagnostics", "service-maintenance", "service-other",
+]
+assert [len(card.select(".job")) for card in soup.select(".service-card")] == [4, 9, 4, 4, 6, 5]
+for job in content["jobs"]:
+    node = soup.find(id="detail-" + job["slug"])
+    assert node.find_parent(class_="service-card")["id"] == "service-" + job["group"]
+    assert node.select_one(".price-note").get_text() == job["price_note"]
+    assert node.select_one(".job-body > p").get_text() == job["intro"]
+assert [q["name"] for q in questions] == [q for q, _ in content["faqs"]]
+assert [q["acceptedAnswer"]["text"] for q in questions] == [a for _, a in content["faqs"]]
+assert len(soup.select(".service-steps > li")) == 4
+for selector in [".arrival", ".contact-hours", ".location-hours"]:
+    assert content["hours"] in soup.select_one(selector).get_text()
+assert content["offer"] == soup.select_one(".hero-offer").get_text()
+assert not soup.select('.job#detail-besplatnaya-diagnostika-avtomobilya')
+assert not soup.select('.service-card#service-wash')
+assert not soup.select('img[src*="wash.webp"]')
+assert not soup.select('.sitemap-links a[href="#detail-besplatnaya-diagnostika-avtomobilya"]')
+assert not any(x in soup.body.get_text() for x in ['[уточнить', 'На сайте сервиса заявлена', 'На действующем сайте', 'Ежедневно'])
+assert soup.select_one('.booking-form [type="submit"]').has_attr("disabled")
+assert 'Данные никуда не отправляются' in soup.select_one('.demo-notice').get_text()
+assert len(soup.select('.hero-caption, .about-image small')) == 2
+hours = next(x for x in graph if x['@type'] == 'AutoRepair')['openingHoursSpecification']
+assert hours == [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "19:00"}]
+assert [x.h3.get_text() for x in soup.select('.review-card')[:3]] == ['Артем П.', 'Евгений', 'Дмитрий Заграй']
+
 original = BeautifulSoup(
     (ROOT / "sources/pages/home.html").read_text(encoding="utf-8"), "html.parser"
 )
 reviews = original.select(".review_items .review")
-assert len(reviews) == len(soup.select(".attribution")) == 7
+assert len(reviews) == len(soup.select(".review-card")) == 7
 for review in reviews:
-    assert review.select_one(".review_text").get_text(" ", strip=True) in soup.get_text(
-        " ", strip=True
-    )
-    assert review.select_one("strong").get_text(strip=True) in soup.get_text(
-        " ", strip=True
-    )
-    assert review.select_one("small").get_text(strip=True) in soup.get_text(
-        " ", strip=True
-    )
+    author = review.select_one("strong").get_text(strip=True)
+    card = next(card for card in soup.select(".review-card") if card.h3.get_text(strip=True) == author)
+    assert card.blockquote.get_text(" ", strip=True) == review.select_one(".review_text").get_text(" ", strip=True)
+    assert card.select_one("header p").get_text(strip=True) == review.select_one("small").get_text(strip=True)
+assert soup.select_one("#reviews iframe")["src"] == "https://yandex.ru/maps-reviews-widget/13496778418?comments"
 legal, legal_status = fetch("/legal.html")
 assert legal_status == 200
 assert (
@@ -107,10 +135,11 @@ result = {
     "root_status": status,
     "h1": 1,
     "groups": 6,
-    "jobs": 33,
+    "jobs": 32,
     "reviews_exact": 7,
-    "faq_matches_html": 9,
-    "services_match_html": 39,
+    "official_reviews_widget": True,
+    "faq_matches_html": 17,
+    "services_match_html": 38,
     "source_routes": 48,
     "launch_redirect_candidates": 47,
     "prototype_noindex": True,
@@ -203,6 +232,7 @@ with TemporaryDirectory(prefix="kingmotors-build-") as directory:
     (clean / "docs-v2").mkdir()
     shutil.copyfile(ROOT / "docs/page-copy.md", clean / "docs/page-copy.md")
     shutil.copyfile(ROOT / "docs-v2/content-map.md", clean / "docs-v2/content-map.md")
+    shutil.copyfile(ROOT / "docs-v2/site-content.json", clean / "docs-v2/site-content.json")
     for repeat in range(2):
         for script in ["build_rest", "build_prototype", "build_legal", "package"]:
             subprocess.run(

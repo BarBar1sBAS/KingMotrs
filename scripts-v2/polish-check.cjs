@@ -32,10 +32,9 @@ const assert = require("node:assert/strict");
       await p.keyboard.press("Escape");
     }
     results.deepLinks = opened;
-    assert.equal(opened, 33);
+    assert.equal(opened, 32);
     let details = 0;
     for (const selector of [
-      ".review-more",
       ".faq-list details",
       ".secondary-panel",
       ".demo-states",

@@ -1,0 +1,18 @@
+[
+  {
+    "width": 390,
+    "reducedMotionStops": true,
+    "rapidReverse": true,
+    "nativeWheel": true,
+    "resize": true,
+    "fullTextFits": true
+  },
+  {
+    "width": 1440,
+    "reducedMotionStops": true,
+    "rapidReverse": true,
+    "nativeWheel": true,
+    "resize": true,
+    "fullTextFits": true
+  }
+]

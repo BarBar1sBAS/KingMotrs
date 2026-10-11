@@ -20,7 +20,7 @@ async function ready(page) {
       (image) => image.complete && image.naturalWidth > 0,
     ),
   );
-  // Async portrait decoding can finish after load; screenshots must wait for pixels.
+  // Async image decoding can finish after load; screenshots must wait for pixels.
   await page.evaluate(() =>
     Promise.all([...document.images].map((image) => image.decode())),
   );
@@ -64,13 +64,16 @@ async function main() {
       await p.goto(base);
       await ready(p);
       await noOverflow(p, `${width}: closed`);
-      assert.equal(await p.locator(".job").count(), 33);
-      assert.equal(await p.locator("#team .team-member").count(), 5);
-      assert.equal(await p.locator("#reviews .attribution").count(), 7);
-      const teamColumns = await p.locator(".team-list").evaluate((el) =>
-        getComputedStyle(el).gridTemplateColumns.split(" ").length,
-      );
-      assert.equal(teamColumns, width >= 1200 ? 5 : width >= 768 ? 3 : 1);
+      assert.equal(await p.locator(".job").count(), 32);
+      assert.equal(await p.locator("#team").count(), 0);
+      assert.equal(await p.locator('a[href="#team"]').count(), 0);
+      assert.equal(await p.locator("#reviews .review-card").count(), 7);
+      const reviews = p.locator("#reviews iframe");
+      assert.equal(await reviews.getAttribute("src"), "https://yandex.ru/maps-reviews-widget/13496778418?comments");
+      assert.equal(await reviews.getAttribute("loading"), "lazy");
+      const bounds = await reviews.boundingBox();
+      assert(bounds.width >= 300 && bounds.width <= 760);
+      assert.equal(bounds.height, 600);
       assert(
         await p.evaluate(
           () =>
@@ -79,6 +82,9 @@ async function main() {
         ),
       );
       if (exporting && [390, 768, 1440].includes(width)) {
+        await reviews.scrollIntoViewIfNeeded();
+        await p.frameLocator("#reviews iframe").getByText("КингМоторс", { exact: true }).waitFor({ timeout: 30000 });
+        await p.frameLocator("#reviews iframe").getByText("Больше отзывов на Яндекс Картах", { exact: true }).waitFor({ timeout: 30000 });
         await p.locator("#location").scrollIntoViewIfNeeded();
         // The lazy iframe starts loading only when it approaches the viewport.
         const map = p.frameLocator('iframe[src*="map-widget"]');
@@ -94,8 +100,8 @@ async function main() {
           "top",
           "services",
           "about",
-          "team",
           "reviews",
+          "faq",
           "booking",
           "location",
         ]) {
@@ -104,6 +110,33 @@ async function main() {
             .screenshot({ path: `output-v2/mockups/${id}-${width}.png` });
         }
       }
+      if (exporting && [390, 768, 1440].includes(width)) {
+        // Chromium can blank an offscreen cross-origin iframe in a full-page capture.
+        // Insert the actual section screenshot at its original page coordinates.
+        const section = await p.locator("#reviews").evaluate(el => {
+          const r = el.getBoundingClientRect();
+          return { x: Math.round(r.x + scrollX), y: Math.round(r.y + scrollY) };
+        });
+        const { execFileSync } = require("node:child_process");
+        const path = require("node:path");
+        execFileSync(path.join(process.cwd(), ".venv", process.platform === "win32" ? "Scripts/python.exe" : "bin/python"), ["-c",
+          "from PIL import Image; import sys; p=sys.argv[1]; im=Image.open(p); frame=Image.open(sys.argv[2]); im.paste(frame,(int(sys.argv[3]),int(sys.argv[4]))); im.save(p)",
+          `output-v2/mockups/home-${width}.png`, `output-v2/mockups/reviews-${width}.png`, String(section.x), String(section.y)]);
+      }
+      const rail = p.locator(".reviews-rail");
+      assert(await p.locator(".reviews-prev").isDisabled());
+      await p.locator(".reviews-next").click();
+      await p.waitForFunction(() => document.querySelector(".reviews-rail").scrollLeft > 10);
+      await p.waitForFunction(() => !document.querySelector(".reviews-prev").disabled);
+      await rail.focus();
+      await p.keyboard.press("End");
+      await p.waitForFunction(() => document.querySelector(".reviews-next").disabled);
+      await p.keyboard.press("Home");
+      await p.waitForFunction(() => document.querySelector(".reviews-prev").disabled);
+      await p.keyboard.press("ArrowRight");
+      await p.waitForFunction(() => document.querySelector(".reviews-rail").scrollLeft > 10);
+      await p.keyboard.press("Home");
+      await noOverflow(p, `${width}: review carousel`);
       const geometry = () =>
         p.locator(".service-card").evaluateAll((cards) =>
           cards.map((card) => {
@@ -139,11 +172,6 @@ async function main() {
       );
       await p.keyboard.press("Escape");
       await noOverflow(p, `${width}: text200 closed`);
-      assert(await p.locator("#team").evaluate((el) =>
-        [...el.querySelectorAll("h2,h3,p")].every((item) =>
-          item.scrollWidth <= item.clientWidth + 1 &&
-          getComputedStyle(item).overflowY === "visible"),
-      ), `${width}: team text200 clipped`);
       if (exporting && [320, 390, 1440].includes(width))
         await p.screenshot({
           path: `output-v2/review/text200-${width}.png`,
@@ -172,16 +200,11 @@ async function main() {
     await p.waitForFunction(() => document.activeElement.id === "main");
     await p.locator(".menu-toggle").focus();
     await p.keyboard.press("Enter");
-    await p.locator('#mobile-nav a[href="#team"]').focus();
+    await p.locator('#mobile-nav a[href="#reviews"]').focus();
     await p.keyboard.press("Enter");
-    await p.waitForFunction(() => document.activeElement.id === "team");
-    assert(p.url().endsWith("#team"));
+    await p.waitForFunction(() => document.activeElement.id === "reviews");
+    assert(p.url().endsWith("#reviews"));
     assert(await p.locator("#mobile-nav").isHidden());
-    await p.goto(`${base}/#team`);
-    await ready(p);
-    assert(await p.locator("#team").evaluate((el) =>
-      Math.abs(el.getBoundingClientRect().top) < innerHeight / 2,
-    ));
     let jobs = 0;
     for (const trigger of await p.locator(".service-trigger").all()) {
       await trigger.focus();
@@ -196,7 +219,7 @@ async function main() {
       await p.keyboard.press("Escape");
       assert(await trigger.evaluate((el) => el === document.activeElement));
     }
-    assert.equal(jobs, 33);
+    assert.equal(jobs, 32);
     results.jobs = jobs;
     await p.locator(".service-trigger").first().click();
     for (const key of ["Tab", "Shift+Tab"]) {
@@ -277,8 +300,8 @@ async function main() {
     });
     await nojs.goto(base);
     assert(await nojs.locator("[type=submit]").isDisabled());
-    assert.equal(await nojs.locator("#team .team-member").count(), 5);
-    assert(await nojs.locator(".team-notice").isVisible());
+    assert.equal(await nojs.locator("#team").count(), 0);
+    assert.equal(await nojs.locator('a[href="#team"]').count(), 0);
     for (const card of await nojs.locator(".service-card").all()) {
       await card.locator(":scope > summary").click();
       assert(await card.evaluate((el) => el.open));
@@ -289,6 +312,12 @@ async function main() {
       await noOverflow(nojs, "no-JS expanded");
       await card.locator(":scope > summary").click();
     }
+    assert(await nojs.locator("#reviews .text-link").isVisible());
+    assert(await nojs.locator(".reviews-controls").isHidden());
+    assert.equal(await nojs.locator(".review-card").count(), 7);
+    await nojs.locator(".review-card").last().scrollIntoViewIfNeeded();
+    assert(await nojs.locator(".reviews-rail").evaluate(el => el.scrollLeft > 0));
+    await noOverflow(nojs, "no-JS last review");
     await nojs.close();
     const fallback = await page({ viewport: { width: 390, height: 950 } });
     await fallback.route("https://yandex.ru/**", (route) => route.abort());
@@ -301,6 +330,13 @@ async function main() {
       ".location-copy .btn",
     ])
       assert(await fallback.locator(selector).isVisible());
+    await fallback.locator("#reviews").scrollIntoViewIfNeeded();
+    const reviewLink = fallback.locator("#reviews .text-link");
+    assert(await reviewLink.isVisible());
+    assert.equal(await reviewLink.getAttribute("href"), "https://yandex.ru/maps/org/kingmotors/13496778418/reviews/");
+    await reviewLink.focus();
+    assert(await reviewLink.evaluate(el => el === document.activeElement));
+    await noOverflow(fallback, "reviews unavailable");
     await fallback.close();
     if (exporting) {
       const components = await page({
@@ -319,8 +355,11 @@ async function main() {
       focusAndHistory: true,
       demoForm: true,
       noJS: true,
-      demoTeam: true,
+      teamRemoved: true,
       mapFallback: true,
+      reviewsWidget: true,
+      reviewsCarousel: true,
+      reviewsFallback: true,
     });
     assert.deepEqual(results.errors, []);
     assert.deepEqual(results.localFailures, []);
@@ -329,7 +368,7 @@ async function main() {
       JSON.stringify(results, null, 2) + "\n",
     );
     console.log(
-      `Browser: ${widths.length} widths, 33 jobs, text200, keyboard, history, demo form and no-JS passed.`,
+      `Browser: ${widths.length} widths, 32 jobs, text200, keyboard, history, demo form and no-JS passed.`,
     );
   } finally {
     await browser.close();

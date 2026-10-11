@@ -282,6 +282,14 @@ function revealHash({ smooth = false } = {}) {
       (target.closest(".service-dialog") ? activeGroup : null);
   if (group) {
     openService(group, target.matches(".job") ? target : null);
+    // Historical links to supporting services point to readable content in the dialog.
+    if (!target.matches(".service-card, .job")) {
+      requestAnimationFrame(() => {
+        target.tabIndex = -1;
+        target.focus({ preventScroll: true });
+        target.scrollIntoView({ block: "nearest", behavior: "instant" });
+      });
+    }
     return;
   }
   // URL navigation already selected its history entry; closing must not rewrite it.
@@ -582,3 +590,44 @@ window.addEventListener("pageshow", (e) => {
     });
   }
 });
+
+// Native horizontal scrolling keeps every full review available without JavaScript.
+const reviewRail = document.querySelector(".reviews-rail");
+if (reviewRail) {
+  const cards = [...reviewRail.querySelectorAll(".review-card")];
+  const previous = document.querySelector(".reviews-prev");
+  const next = document.querySelector(".reviews-next");
+  const position = document.querySelector(".reviews-position");
+  const cardLeft = (card) => card.getBoundingClientRect().left - reviewRail.getBoundingClientRect().left + reviewRail.scrollLeft;
+  const nearestCard = () => cards.reduce((best, card, i) =>
+    Math.abs(cardLeft(card) - reviewRail.scrollLeft) < Math.abs(cardLeft(cards[best]) - reviewRail.scrollLeft) ? i : best, 0);
+  function updateReviews() {
+    const end = reviewRail.scrollWidth - reviewRail.clientWidth;
+    previous.disabled = reviewRail.scrollLeft <= 1;
+    next.disabled = reviewRail.scrollLeft >= end - 1;
+    const start = nearestCard();
+    const right = reviewRail.scrollLeft + reviewRail.clientWidth;
+    const last = cards.findLastIndex(card => cardLeft(card) < right - 2);
+    position.textContent = `${start + 1}${last > start ? "–" + (last + 1) : ""} / ${cards.length}`;
+  }
+  function showReview(index, smooth = false) {
+    // Cancel an in-flight native scroll before requesting an immediate position.
+    if (!smooth || reduce.matches)
+      reviewRail.scrollTo({ left: reviewRail.scrollLeft, behavior: "instant" });
+    reviewRail.scrollTo({ left: cardLeft(cards[Math.max(0, Math.min(cards.length - 1, index))]), behavior: smooth && !reduce.matches ? "smooth" : "instant" });
+  }
+  previous.addEventListener("click", () => showReview(nearestCard() - 1, pointerAction));
+  next.addEventListener("click", () => showReview(nearestCard() + 1, pointerAction));
+  reviewRail.addEventListener("keydown", (event) => {
+    if (event.target !== reviewRail) return;
+    const index = { ArrowLeft: nearestCard() - 1, ArrowRight: nearestCard() + 1, Home: 0, End: cards.length - 1 }[event.key];
+    if (index === undefined) return;
+    event.preventDefault();
+    showReview(index);
+  });
+  reviewRail.addEventListener("scroll", updateReviews, { passive: true });
+  new ResizeObserver(updateReviews).observe(reviewRail);
+  reduce.addEventListener("change", () => { if (reduce.matches) showReview(nearestCard()); });
+  document.querySelector(".reviews-controls").hidden = false;
+  updateReviews();
+}
