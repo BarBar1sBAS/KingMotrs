@@ -1987,7 +1987,7 @@ html.service-modal-open {
 }
 
 /* Live Yandex widget alongside the preserved reviews, in the v2 palette. */
-#reviews > .wrap { position: relative; }
+#reviews > .wrap { position: relative; min-width: min(100%, 300px); }
 .reviews-head { display: flex; align-items: center; }
 .motion-ready .reviews-head { padding-right: 200px; }
 .reviews-head h2 { margin-bottom: 16px; }
